@@ -15,9 +15,12 @@ public class JDBISqlConnection {
       Jdbi jdbi = Jdbi.create(url, userName, password);
         try (Handle handle = jdbi.open()) {
 
-            handle.execute("CREATE TABLE IF NOT EXISTS Person (Id SERIAL PRIMARY KEY, Name VARCHAR(100))");
-            handle.execute("INSERT INTO Person (Name) VALUES (?)", "Özen Ereyli");
+            //Hocam tabloyu oluşturup crud işlemlerini tek tek denedim Hepsi çalıştı :)
+
+            //handle.execute("CREATE TABLE IF NOT EXISTS Person (Id SERIAL PRIMARY KEY, Name VARCHAR(100))");
+            handle.execute("INSERT INTO Person (Name) VALUES (?)", "Serkan Ereyli");
             //handle.execute("UPDATE Person SET Name=(?) WHERE Id=2","Haktan Ereyli");
+            //handle.execute("DELETE FROM Person WHERE Id=(?)",3);
 
             String result = handle.createQuery("SELECT Name FROM Person WHERE id = :id")
                     .bind("id", 1)
