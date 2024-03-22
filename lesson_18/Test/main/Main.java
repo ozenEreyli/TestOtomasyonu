@@ -1,0 +1,13 @@
+package org.rd.lessons.lesson18.main;
+
+public class Main {
+
+    public static void main(String[] args){
+
+        //org.junit.runner.JUnitCore.main("org.rd.lessons.lesson18.CalculateSalaryTest");
+
+        org.testng.TestNG.main(new String[]{"-d", "target/test-classes","org.rd.lessons.lesson18.CalculateSalaryTestNG"});
+
+    }
+
+}
