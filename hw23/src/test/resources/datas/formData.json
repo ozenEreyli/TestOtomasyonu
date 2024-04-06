@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Özen",
+    "lastName": "EREYLİ",
+    "email": "özen@gmail.com",
+    "age": "39",
+    "salary": "50000",
+    "department": "Yazılım"
+  },
+  {
+    "firstName": "Haktan",
+    "lastName": "EREYLİ",
+    "email": "özen@gmail.com",
+    "age": "3",
+    "salary": "100000",
+    "department": "Tıp"
+  }
+]
